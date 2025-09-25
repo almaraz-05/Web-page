@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    gap: 16px;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+
+}
+
+.header-intro
+{
+    background-color: #1F2937;
+}
+
+.intro {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: #3882F6;
+    color: white;
+    border-style: none;
+}
+
+.placeholder {
+    background-color: gray;
+    height: 200px;
+    width: 400px;
+    align-content: center;
+}
