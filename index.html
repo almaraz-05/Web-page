@@ -1,55 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Webpage</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
 
-    <body>
-        <div class="header-intro">
-        <div class="header">
-            <div class="logo">
-            Header Logo
-            </div>
-            <ul class="links">
-                <li><a href="www.google.com">header link one</a></li>
-                <li><a href="www.google.com">header link two</a></li>
-                <li><a href="www.google.com">header link three</a></li>
-            </ul>
+<head>
+  <meta charset="UTF-8">
+  <title>My Webpage</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1 class="logo">Header Logo</h1>
+    <ul class="links">
+      <li><a href="www.google.com">header link one</a></li>
+      <li><a href="www.google.com">header link one</a></li>
+      <li><a href="www.google.com">header link one</a></li>
+
+    </ul>
+  </div>
+
+  <!-- Main Section -->
+  <div class="main">
+    <!-- Section 1 -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>This website is awesome</h1>
+        <p>This website has some subtext that goes under the main title.
+          It's a smaller font and the color is lower contrast.
+        </p>
+        <button>Sign up</button>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="data:image/png;base64,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"
+          alt="Northern Illinois University Logo">
+      </div>
+    </section>
+
+
+
+    <!-- Section 2 -->
+    <section class="product">
+      <div class="random-info-title">Some Random Information</div>
+      <div class="four-photos">
+        <div class="descriptions">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/1200px-Northern_Illinois_Huskies_logo.svg.png"
+            alt="NIU logo">
+          <div class="subtext">this is some subtext under an illustration or image</div>
+        </div>
+        <div class="descriptions">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/1200px-Northern_Illinois_Huskies_logo.svg.png"
+            alt="NIU logo">
+          <div class="subtext">this is some subtext under an illustration or image</div>
+        </div>
+        <div class="descriptions">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/1200px-Northern_Illinois_Huskies_logo.svg.png"
+            alt="NIU logo">
+          <div class="subtext">this is some subtext under an illustration or image</div>
+        </div>
+        <div class="descriptions">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/1200px-Northern_Illinois_Huskies_logo.svg.png"
+            alt="NIU logo">
+
+          <div class="subtext">this is some subtext under an illustration or image</div>
         </div>
 
+      </div>
+  </div>
+
+  </section>
+
+  <!-- Section 3 -->
+  <section class="quote">
+    <div class="quote-box">
+      <p>This is an inspiring quote, or testimonial from a customer. Maybe it's just fulling up space, or Maybe
+         people will actally read it. Who knows? All I know is that it looks nice.
+      </p>
+      <div class="signature">-Thor, God of Thunder</div>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section class="call-to-action">
+    <div class="blue-box">
+      <div class="call-to-action-text"><
+      <div class="call">Call to action! It's time!</div>
+      <div class="sign-up">Sign up for our product by clicking that button right over there!</div>
+/div>
+
+      <button>Sign up</button>
+  </section>
+  </div>
 
 
-
-        <div class="intro">
-            <h1>This website is awesome</h1>
-            <p>This website has some subtext that goes here under the main title It's a smaller font and the color is lower contrast.</p>    
-            <div class="placeholder">
-                this is a placeholder for an image
-            </div>
-        </div>
-        
-         <button>Sign Up</button>
-        </div>
-
-        <div class="random">
-
-        </div>
-
-        <div class="quote">
-
-        </div>
-
-        <div class="sign-up">
-
-        </div>
-
-        <div class="footer">
-
-        </div>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="inner-column">
+      <h2>footer</h2>
+    </div>
+  </div>
 
 
-    </body>
+</body>
 
 </html>
